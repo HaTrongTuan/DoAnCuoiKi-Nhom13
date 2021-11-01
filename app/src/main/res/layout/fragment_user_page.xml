@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserPage"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imvAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ava"
+            tools:ignore="MissingConstraints" />
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:background="@null"
+            android:src="@drawable/cam"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="87dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID tài khoản"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/black"
+            android:textSize="13dp"/>
+        <EditText
+            android:id="@+id/edtIdUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="01000258"
+            android:textColor="#00BCD4"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/edtNameUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MINT COOKIE"
+            android:textColor="#00BCD4"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/edtPhoneUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0123456789"
+            android:textColor="#00BCD4"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/edtEmailUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abcdef@gmail.com"
+            android:textColor="#00BCD4"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:background="@color/white"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="#03A9F4" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa thông tin cá nhân "
+        android:textSize="15dp"
+        android:textColor="#0C0C06"
+        android:gravity="left"
+        android:backgroundTint="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Bật thông báo "
+            android:textSize="15dp"
+            android:textColor="#0C0C06"
+            android:gravity="left"
+            android:backgroundTint="@color/white" />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tắt" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đổi mật khẩu "
+        android:textSize="15dp"
+        android:textColor="#0C0C06"
+        android:gravity="left"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/btnDieuKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điều khoản"
+        android:textSize="15dp"
+        android:textColor="#0C0C06"
+        android:gravity="left"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/btnCauhoithuonggap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu hỏi thường gặp"
+        android:textSize="15dp"
+        android:textColor="#0C0C06"
+        android:gravity="left"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/btnLienhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liên hệ"
+        android:textSize="15dp"
+        android:textColor="#0C0C06"
+        android:gravity="left"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất "
+        android:textSize="15dp"
+        android:textColor="#F44336"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"/>
+
+
+
+</LinearLayout>
